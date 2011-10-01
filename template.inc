@@ -1,5 +1,7 @@
 <?php
 
+include_once "layout2.php";
+
 class mainTemplate extends template {
 
 /**
@@ -55,7 +57,7 @@ echo template::getInlineCss();
     <div class="row">
             <div class="column grid_12">
             <?php
-$blocks = layout::getBlock('blocks_top');
+$blocks = layout2::getBlock('blocks_top');
                 foreach ($blocks as $key => $val){
                     print $val;
                 }
@@ -76,7 +78,7 @@ $blocks = layout::getBlock('blocks_top');
             <div class="column grid_6">
                 <div id="main_menu">
                 <?php
-                    echo layout::getMainMenu(); ?>
+                    echo layout2::getMainMenu(); ?>
                 </div>
             </div>
             <div class="column grid_3">
@@ -89,7 +91,7 @@ $blocks = layout::getBlock('blocks_top');
                 <div id="sidebar_left">
                 <?php
 
-                $blocks = layout::getBlock('blocks');
+                $blocks = layout2::getBlock('blocks');
                 foreach ($blocks as $key => $val){
                     echo $val;
                 }
@@ -100,7 +102,7 @@ $blocks = layout::getBlock('blocks_top');
 
          <div class="column grid_6">
              <div id="module_menu"><?php
-               echo layout::getModuleMenu(); ?>
+               echo layout2::getModuleMenu(); ?>
              </div>
              <?php
 
@@ -137,7 +139,7 @@ public static function printFooter(){ ?>
             <div id="sidebar_right">
                 <?php
 
-                $blocks_sec = layout::getBlock('blocks_sec');
+                $blocks_sec = layout2::getBlock('blocks_sec');
                 foreach ($blocks_sec as $key => $val){
                     print $val;
                 }
