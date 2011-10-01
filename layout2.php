@@ -1,4 +1,5 @@
 <?php
+
 class layout2 extends layout {
 
         /**

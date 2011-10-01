@@ -282,6 +282,7 @@ legend {
     padding: 2px;
     position: relative;
     margin: 2px;
+    display: inline-block;
 
 }
 /*
@@ -290,7 +291,7 @@ legend {
 
 }*/
 
-.module_menu_li {
+#module_menu li {
     display: inline-block;
     color:#aaa;
     padding: 2px;   
@@ -298,57 +299,17 @@ legend {
 
 
 
-.module_menu_li a {   
+#module_menu a {   
     color:#333;
     font-size: 100%;    
 }
 
-.module_menu_li a.current {   
-    color:#333;
+#module_menu a.current {   
+    color:#000;
     font-size: 100%;    
 }
 
 
-
-#system_admin_menu_top {
-
-    margin: 10px;
-    display:inline-block;
-    top: 0;
-    z-index:2;
-    
-}
-
-#system_admin_menu_top ul {
-
-    top:0;
-    padding: 10px;
-    position: relative;
-    margin: 10px;
-    padding-left: 8px;
-
-}
-
-li.system_admin_menu_top {
-        font-size: 125%;
-    display: inline-block;
-    color:#aaa;
-    -moz-border-radius: 1px 1px 1px 1px;
-    -moz-box-sizing: border-box;
-    background: none repeat scroll 0 0 #fff;
-    border-color: #aaa #ddd #aaa;
-    border-right: 1px solid #aaa;   
-    border-style: solid;
-    border-width: 1px;
-    padding: 4px;
-   
-}
-
-.system_admin_menu_top a {  
-
-    color:#333;
-    font-size: 100%;    
-}
 
 .headline {
     font-size: 150%;
