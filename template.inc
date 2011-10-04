@@ -34,7 +34,7 @@ public static function printHeader(){ ?>
 
 
 echo template::getMeta();
-template::setTemplateCss('gaya', 10, 30);
+template::setTemplateCss('gaya', 10, 40);
 
 echo template::getCss();
 echo template::getInlineCss();
