@@ -27,10 +27,12 @@ public static function printHeader(){ ?>
 <script src="/js/jquery.tr.js"></script>
     <link href="/templates/gaya/grid.css?version=10" type="text/css" rel="stylesheet" media="screen"/>
 
-
+<script type="text/javascript">
+</script>
   
 <?php
 
+template::setJs ("/templates/gaya/js/helpers.js");
 
 
 echo template::getMeta();
@@ -114,9 +116,7 @@ $blocks = layout2::getBlock('blocks_top');
             <div class="system_message">
                 <?=$message?>
             </div>
-            <script type="text/javascript">
-                 $('.system_message').prepend('<img width="10" src="/templates/gaya/images/icons/checkmark.gif" />')
-            </script>
+            
             <?php } ?>
              <div id="content">
 
