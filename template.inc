@@ -84,7 +84,7 @@ $blocks = layout2::getBlock('blocks_top');
                 </div>
             </div>
             <div class="column grid_3">
-            &nbsp;
+           &#160;
             </div>
     </div>
 
