@@ -42,9 +42,6 @@ echo template::getCss();
 echo template::getInlineCss();
 
 
-    echo template::getInlineJs();
-echo template::getJs();
-
 //print_r($_COOKIE);
 
 ?>
@@ -165,8 +162,13 @@ public static function printFooter(){ ?>
     <?php
 
 
+
+    echo template::getInlineJs();
+echo template::getJs();
 ?>
 
+    
+    
 </body>
 </html>
 
