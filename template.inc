@@ -76,7 +76,7 @@ $blocks = layout2::getBlock('blocks_top');
     <div class="row">
             <div class="column grid_3">
                 <?php if (empty(register::$vars['coscms_main']['logo'])) { ?>
-                <a href="/"><?php echo $_SERVER['HTTP_HOST']?></a><?php
+                <a id="logo_title" href="/"><?php echo $_SERVER['HTTP_HOST']?></a><?php
             } else { ?>
                 <div id = "logo_img"><a href="/"><img alt="<?php echo $_SERVER['HTTP_HOST']?>" src="/logo/<?=register::$vars['coscms_main']['logo']?>" /></a></div><?php
             } ?>
