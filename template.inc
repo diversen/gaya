@@ -41,6 +41,10 @@ template::setTemplateCss('gaya', 10, 40);
 echo template::getCss();
 echo template::getInlineCss();
 
+
+    echo template::getInlineJs();
+echo template::getJs();
+
 //print_r($_COOKIE);
 
 ?>
@@ -160,8 +164,6 @@ public static function printFooter(){ ?>
     
     <?php
 
-    echo template::getInlineJs();
-echo template::getJs();
 
 ?>
 
