@@ -59,6 +59,7 @@ echo template::getInlineCss();
 
     <div class="row">
             <div class="column grid_12">
+                <div id="page-wrap">
             <?php
 $blocks = layout2::getBlock('blocks_top');
                 foreach ($blocks as $key => $val){
@@ -66,7 +67,10 @@ $blocks = layout2::getBlock('blocks_top');
                 }
 
 ?>
-            </div>
+
+                 </div>
+                        
+           </div>
 
     </div>
 
