@@ -57,6 +57,9 @@ echo template::getInlineCss();
 
 <div id ="page">
 
+<?php
+
+if (session::isAdmin()) { ?>
     <div class="row">
             <div class="column grid_12">
                 <div id="page-wrap">
@@ -73,7 +76,8 @@ $blocks = layout2::getBlock('blocks_top');
            </div>
 
     </div>
-
+<?php } ?>
+    
     <div class="row">
             <div class="column grid_3">
                 <?php if (empty(register::$vars['coscms_main']['logo'])) { ?>
