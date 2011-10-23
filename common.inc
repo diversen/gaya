@@ -44,3 +44,22 @@ function headline_message($message){
     echo "$message\n";
     echo "</div>\n";
 }
+
+/**
+ * function for printing form errors
+ *
+ * @param  array    errors to display on wrong form submit
+ */
+function view_form_errors($errors){ 
+    if (is_string($errors)){
+        view_error($errors);
+        return;
+    }
+    echo "<!-- view_form_errors -->\n";
+    echo "<div class=\"form_error\"><ul>\n";
+    foreach($errors as $error){
+        echo "<li>$error</li>\n";
+    }
+    echo "</ul></div>\n";
+    echo "<!-- / end form_error -->\n";
+}
