@@ -4,6 +4,55 @@ include_once "layout2.php";
 
 class mainTemplate extends template {
 
+    /**
+     * replacement vars for e.g. inline css. 
+     * @var array $replace replace inline css (found in modules placed outside 
+     *                     web space) with these settings
+     */
+    public static $replace = array (
+        // hex is base colors
+            '#b56634',
+            '#7d4c34',
+            '#0f0',
+            '#666',
+            '#333',
+            '#000',
+            '#fff',
+            '#000',
+            '#eee',
+            '#000',
+            '#333');
+    /**
+     * search css elements for these vars
+     * @var array $search the array of elements to search for. 
+     */
+    public static $search =
+        array (
+        // hex is base colors
+            '#hex1',
+            '#hex2',
+            '#hex3',
+            '#hex4',
+            '#hex5',
+            '#hex6',
+            '#hex7',
+            '#background1',
+            '#background2',
+            '#font1',
+            '#font2'
+        );
+    
+    /**
+     * method for replacing css elements with settings in 
+     * self::$search with elements found in self::$replace
+     * @param type $str
+     * @return type 
+     */
+    public static function assetsReplace ($str) {
+        return str_replace(self::$search, self::$replace, $str);
+    }
+    
+    
 /**
  * method for printing out template header
  *
@@ -62,11 +111,11 @@ echo template::getInlineCss();
 if (session::isAdmin()) { ?>
     <div class="row">
             <div class="column grid_12">
-                <div id="page-wrap">
+                <div id="system_admin_menu">
             <?php
 $blocks = layout2::getBlock('blocks_top');
                 foreach ($blocks as $key => $val){
-                    print $val;
+                    echo $val;
                 }
 
 ?>
@@ -80,11 +129,7 @@ $blocks = layout2::getBlock('blocks_top');
     
     <div class="row">
             <div class="column grid_3">
-                <?php if (empty(register::$vars['coscms_main']['logo'])) { ?>
-                <a id="logo_title" href="/"><?php echo $_SERVER['HTTP_HOST']?></a><?php
-            } else { ?>
-                <div id = "logo_img"><a href="/"><img alt="<?php echo $_SERVER['HTTP_HOST']?>" src="/logo/<?=register::$vars['coscms_main']['logo']?>" /></a></div><?php
-            } ?>
+                <?=template::getLogoHTML(); ?>
             </div>
             <div class="column grid_6">
                 <div id="main_menu">
@@ -185,6 +230,9 @@ echo template::getJs();
     // end function
 
     }
+    
+    
+
     
 // end class
 }
