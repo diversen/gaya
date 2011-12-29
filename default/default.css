@@ -93,42 +93,42 @@ code {
 }
 
 
-#content_tree {
+.content_tree {
 
 }
-#content_tree ul  {
+.content_tree ul  {
     color: #7d4c34;
     list-style: none;
     padding: 0px 7px 0px;
 }
 
-#content_tree li {
+.content_tree li {
     list-style: none;
 }
 
-#content_tree a {
+.content_tree a {
     font-size: 225%;
     line-height: 100%;
 }
 
-#content_tree li a.current {
+.content_tree li a.current {
     color: #333;
     /*b56634*/
     list-style: none;
 }
 
 
-#content_tree a:link {
+.content_tree a:link {
     text-decoration: none;
     color: #b56634;
 }
 
-#content_tree a:visited {
+.content_tree a:visited {
     text-decoration: none;
     color: #b56634;
 }
 
-#content_tree a:hover {
+.content_tree a:hover {
     text-decoration: none;
     color: #000;
 }
