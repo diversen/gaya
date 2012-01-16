@@ -36,13 +36,13 @@ code {
 
 #logo_img {
     width: 100%;
-    margin-left: 35px;
+    margin-left: 0px;
     padding-bottom: 5px;
 }
 
 #main_menu {
-    /*background-color: #777; */
-     background: url("/templates/gaya/images/nav-bg-bigger.png") repeat-x; 
+    background-color: #AD8C79;
+
     float: left;
     width: 100%;
 
@@ -59,6 +59,7 @@ code {
     float: left;
     display: block;
     padding: 0px 12px 0px 12px;
+    background: #ad8c79;
     color: #fff;
     text-decoration: none;
     font-size: 13px;
@@ -66,14 +67,15 @@ code {
 }
 
 #main_menu li a.current {
-    background: #b56634;
+    background: #d0df78;
     color: #fff;
 }
 
 
 #main_menu li a:hover {
-    background: #b56634;
+    background: #d0df78
 }
+
 
 
 #block_menu {
