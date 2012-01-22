@@ -38,11 +38,11 @@ function view_error($message){
  * function for printing a top line title of your page.
  * @param  string   headline message to be printed
  */
-function headline_message($message){
+function headline_message($message, $size = 'h3'){
     echo "<!-- headline_message -->\n";
-    echo "<div class=\"headline\">\n";
-    echo "$message\n";
-    echo "</div>\n";
+    //echo "<div class=\"headline\">\n";
+    echo "<$size>$message</$size>\n";
+    //echo "</div>\n";
 }
 
 /**
