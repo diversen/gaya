@@ -154,6 +154,21 @@ code {
     color: #000;
 }
 
+h3 {
+    font-size: 200%;
+    /*
+        display: block;
+        -moz-border-radius: 1px 1px 1px 1px;
+    -moz-box-sizing: border-box;
+    background: none repeat scroll 0 0 #eee;
+    border-color: #777 #aaa #aaa;
+    border-right: 1px thin #aaa;
+    border-style: thin;
+    border-width: 1px;
+    margin: 0px;
+    padding: 8px;
+    padding-left:0px; */
+}
 
 #sidebar_left h3 {
     font-size: 200%;
