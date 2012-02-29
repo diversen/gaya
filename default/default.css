@@ -95,7 +95,9 @@ code {
 
 
 .content_tree {
-
+    display:block;
+    left:-10px;
+    
 }
 .content_tree ul  {
     color: #7d4c34;
@@ -197,10 +199,6 @@ html {
 	-khtml-opacity: 0.9;
 	opacity: 0.9;
 
-
-    position:absolute;
-    width: 100%;
-    text-align:left;
 }
 
 
@@ -340,9 +338,16 @@ legend {
     height: 0.1px;
 }
 
+.block {
+
+    border: 1px #000 solid;
+    border-bottom: 0px;
+}
+
 .block ul {
     list-style: none;
     background-color: #fff;
+
 }
 
 .collapse {
