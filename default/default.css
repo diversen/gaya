@@ -96,7 +96,7 @@ code {
 
 .content_tree {
     display:block;
-    left:-10px;
+    left:0px;
     
 }
 .content_tree ul  {
@@ -139,7 +139,7 @@ code {
 
 #sidebar_left h3 {
     font-size: 200%;
-    padding-left: 35px;
+
 }
 
 
@@ -339,14 +339,29 @@ legend {
 }
 
 .block {
-
-    border: 1px #000 solid;
+    width: 100%;
+    border: 1px #000 thick;
     border-bottom: 0px;
+        display: block;
+    left:0px;
+
+    padding: 10px 20px 20px 20px;
+    margin-bottom: 15px;
+
+    border: 2px solid #CCCCCC;
+
+    float: left;
+    box-shadow: 2px 4px 4px 1px grey;
+    -moz-box-shadow: 2px 4px 4px 1px grey;
+    -webkit-box-shadow: 2px 4px 4px 1px grey;
 }
 
 .block ul {
-    list-style: none;
+
     background-color: #fff;
+    color: #7d4c34;
+    list-style: none;
+    padding: 0px 7px 0px;
 
 }
 
