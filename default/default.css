@@ -93,6 +93,15 @@ code {
     opacity: 0.9;
 }
 
+#sidebar_right {
+    background-color: #fff;
+    filter:alpha(opacity=90);
+    -moz-opacity:0.9;
+    -khtml-opacity: 0.9;
+    opacity: 0.9;
+}
+
+
 
 .content_tree {
     display:block;
@@ -208,14 +217,6 @@ html {
 }
 
 
-#sidebar_right {
-    padding-top: 12px;
-    background-color: #fff;
-    filter:alpha(opacity=90);
-    -moz-opacity:0.9;
-    -khtml-opacity: 0.9;
-    opacity: 0.9;
-}
 
 #content {
     background-color: #fff;
@@ -339,30 +340,22 @@ legend {
 }
 
 .block {
-    width: 100%;
-    border: 1px #000 thick;
-    border-bottom: 0px;
-        display: block;
+    width: 95%;
+    display: block;
     left:0px;
-
-    padding: 10px 20px 20px 20px;
-    margin-bottom: 15px;
-
-    border: 2px solid #CCCCCC;
-
+    padding: 2px 4px 4px 4px;
+    margin-bottom: 10px;
+    border: 1px solid #CCCCCC;
     float: left;
-    box-shadow: 2px 4px 4px 1px grey;
-    -moz-box-shadow: 2px 4px 4px 1px grey;
-    -webkit-box-shadow: 2px 4px 4px 1px grey;
+    box-shadow: 1px 1px 1px 1px grey;
+
 }
 
 .block ul {
-
     background-color: #fff;
     color: #7d4c34;
     list-style: none;
     padding: 0px 7px 0px;
-
 }
 
 .collapse {
