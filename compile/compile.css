@@ -1,9 +1,7 @@
 @import url("table.css");
 
 code {
-  background:  #eee;
-  
-
+  background-color: {background_color_2};
 }
 
 
@@ -13,7 +11,7 @@ code {
     -khtml-opacity: 0.0;
     opacity: 0.0;
     text-align:right;
-    background-color: #fff;
+    background-color: {background_color_1};
 }
 
 .filter  {
@@ -41,8 +39,7 @@ code {
 }
 
 #main_menu {
-    /*background-color: #777; */
-     background: url("/templates/gaya/images/nav-bg-bigger.png") repeat-x; 
+    background: {background_color_main_menu}
     float: left;
     width: 100%;
 
@@ -66,13 +63,13 @@ code {
 }
 
 #main_menu li a.current {
-    background: #b56634;
+    background-color: {background_color_main_menu_1};
     color: #fff;
 }
 
 
 #main_menu li a:hover {
-    background: #b56634;
+    background-color: {background_color_main_menu_2};
 }
 
 
@@ -86,7 +83,7 @@ code {
 }
 
 #sidebar_left{ 
-    background-color: #fff;
+    background-color: {background_color_sidebar_1};
     filter:alpha(opacity=90);
     -moz-opacity:0.9;
     -khtml-opacity: 0.9;
@@ -94,7 +91,7 @@ code {
 }
 
 #sidebar_right {
-    background-color: #fff;
+    background-color: {background_color_sidebar_1};
     filter:alpha(opacity=90);
     -moz-opacity:0.9;
     -khtml-opacity: 0.9;
@@ -109,7 +106,7 @@ code {
     
 }
 .content_tree ul  {
-    color: #7d4c34;
+    color: {color_content_tree_1};
     list-style: none;
     padding: 0px 7px 0px;
 }
@@ -124,7 +121,8 @@ code {
 }
 
 .content_tree li a.current {
-    color: #333;
+    
+    color: {color_content_tree_2};
     /*b56634*/
     list-style: none;
 }
@@ -132,17 +130,17 @@ code {
 
 .content_tree a:link {
     text-decoration: none;
-    color: #b56634;
+    color: {color_content_tree_link_a};
 }
 
 .content_tree a:visited {
     text-decoration: none;
-    color: #b56634;
+    color: {color_content_tree_link_visited};
 }
 
 .content_tree a:hover {
     text-decoration: none;
-    color: #000;
+    color: {color_content_tree_link_current};
 }
 
 
