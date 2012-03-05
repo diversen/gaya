@@ -1,0 +1,28 @@
+<?php
+
+function parse($file){
+    $css = file_get_contents($file);
+    $css = preg_replace('#/\*(?:[^*]*(?:\*(?!/))*)*\*/#','',($css));
+    preg_match_all( '/(?ims)([a-z0-9\s\.\:#_\-@,]+)\{([^\}]*)\}/', $css, $arr);
+    $result = array();
+    foreach ($arr[0] as $i => $x){
+        $selector = trim($arr[1][$i]);
+        $rules = explode(';', trim($arr[2][$i]));
+        $rules_arr = array();
+        foreach ($rules as $strRule){
+            if (!empty($strRule)){
+                $rule = explode(":", $strRule);
+                $rules_arr[trim($rule[0])] = trim($rule[1]);
+            }
+        }
+
+        $selectors = explode(',', trim($selector));
+        foreach ($selectors as $strSel){
+            $result[$strSel] = $rules_arr;
+        }
+    }
+    return $result;
+}
+
+$res = parse("../default/default.css");
+print_r($res);

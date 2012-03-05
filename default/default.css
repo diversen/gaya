@@ -362,7 +362,7 @@ display: none;
 }
 
 
-input[type="email"], input[type="submit"], input[type="password"], input[type="text"], input[type="url"] {
+input {
     -moz-border-radius: 1px 1px 1px 1px;
     -moz-box-sizing: border-box;
     background: none repeat scroll 0 0 #FFFFFF;
