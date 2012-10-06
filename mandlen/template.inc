@@ -41,7 +41,7 @@ template::setJs ("/templates/gaya/js/helpers.js");
 
 
 echo template::getMeta();
-template::setTemplateCss('gaya', 10, 40);
+template::setTemplateCss('gaya/mandlen', 10, 40);
 
 echo template::getCss();
 echo template::getInlineCss();

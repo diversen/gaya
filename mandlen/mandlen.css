@@ -1,0 +1,408 @@
+/* @import url("table.css"); */
+
+code {
+  background:  #eee;
+  
+}
+
+
+#hidden {
+    filter:alpha(opacity=90);
+    -moz-opacity:0.0;
+    -khtml-opacity: 0.0;
+    opacity: 0.0;
+    text-align:right;
+    background-color: #fff;
+}
+
+.filter  {
+    color: #123;
+    padding: 0px 0px 0px 0px;
+    margin-left: 40px;
+    text-align: left;
+    list-style-type:circle;
+    vertical-align:top;
+}
+
+#logo_title {
+    padding: 0px 0px 0px 0px;
+    font-size: 360%;
+    width: 100%;
+    margin-left: 35px;
+    padding-bottom: 5px;
+    line-height: 120%;
+}
+
+#logo_img {
+    width: 100%;
+    margin-left: 35px;
+    padding-bottom: 5px;
+}
+
+#main_menu {
+    /*background-color: #777; */
+     background: url("/templates/gaya/images/nav-bg-bigger.png") repeat-x; 
+    float: left;
+    width: 100%;
+
+}
+
+#main_menu ul {
+    margin-left: -40px;
+    margin-top: 0px;
+    list-style: none;
+
+}
+
+#main_menu li a {
+    float: left;
+    display: block;
+    padding: 0px 12px 0px 12px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 50px;
+}
+
+#main_menu li a.current {
+    background: #b56634;
+    color: #fff;
+}
+
+
+#main_menu li a:hover {
+    background: #b56634;
+}
+
+
+#block_menu {
+
+
+}
+
+#block_menu_right {
+
+}
+
+#sidebar_left{ 
+    background-color: #fff;
+    filter:alpha(opacity=90);
+    -moz-opacity:0.9;
+    -khtml-opacity: 0.9;
+    opacity: 0.9;
+}
+
+#sidebar_right {
+    background-color: #fff;
+    filter:alpha(opacity=90);
+    -moz-opacity:0.9;
+    -khtml-opacity: 0.9;
+    opacity: 0.9;
+}
+
+
+
+.content_tree {
+    display:block;
+    left:0px;
+    
+}
+.content_tree ul  {
+    color: #7d4c34;
+    list-style: none;
+    padding: 0px 7px 0px;
+}
+
+.content_tree li {
+    list-style: none;
+}
+
+.content_tree a {
+    font-size: 225%;
+    line-height: 100%;
+}
+
+.content_tree li a.current {
+    color: #333;
+    /*b56634*/
+    list-style: none;
+}
+
+
+.content_tree a:link {
+    text-decoration: none;
+    color: #b56634;
+}
+
+.content_tree a:visited {
+    text-decoration: none;
+    color: #b56634;
+}
+
+.content_tree a:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+
+#sidebar_left h3 {
+    font-size: 200%;
+
+}
+
+
+hr {
+    display: block;
+    color: #7d4c34;
+}
+
+a:link {
+    color: #b56634;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #b56634;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #666
+}
+
+a:active {
+    color: #b56634;
+    text-decoration: none;
+}
+
+img {
+    border-style: none;
+}
+
+body {
+    font: normal 13px/20px Arial, sans-serif;
+    color: #000;
+    background-color: #fff;
+    /*
+    background-image: url("/templates/mandlen/body_top.jpg");
+    background-position: 50% 50%;
+    background-repeat:no-repeat;
+    */
+}
+
+html {
+    height: 100%;
+    overflow:scroll;
+    /** for scrollbars hidden use overflow:hidden; */
+}
+
+
+
+
+/* specific divs */
+#page {
+    filter:alpha(opacity=90);
+	-moz-opacity:0.9;
+	-khtml-opacity: 0.9;
+	opacity: 0.9;
+
+}
+
+
+
+#search {
+    text-align: right;
+}
+
+
+
+#content {
+    background-color: #fff;
+    padding: 10px;
+}
+
+legend {
+    font-size: 125%;
+    padding: 5px;
+    border:1px solid #eee;
+}
+
+.form_error {
+    color: #700;
+}
+
+#content_image {
+    margin: 10px 10px 10px 10px;
+    padding: 20px 20px 20px 20px;
+    float: right;
+}
+
+
+#tabledebug {
+    background-color: #fff;
+    border: 1px solid gray;
+}
+
+#tabledebug td, tr {
+    background-color: #fff;
+    border: 1px solid gray;
+}
+
+#form_error {
+   color: #F2583E;
+}
+
+#form_confirm {
+    color: #ad8c79;
+}
+
+.system_message {
+    margin-left: 10px;
+    padding: 8px;
+    color:#070;
+       -moz-border-radius: 1px 1px 1px 1px;
+    -moz-box-sizing: border-box;
+    background: none repeat scroll 0 0 #fff;
+    border-color: #aaa #ddd #aaa;
+    border-right: 1px solid #aaa;
+    
+    border-style: solid;
+    border-width: 1px;
+}
+
+
+
+#module_menu {
+    font-weight: bolder;
+    
+}
+
+#module_menu ul { 
+    padding: 2px;
+    position: relative;
+    margin: 2px;
+    display: block
+
+}
+/*
+#module_menu li {
+    display: inline;
+
+}*/
+
+#module_menu li {
+    display: inline-block;
+    color:#aaa;
+    padding: 2px;   
+}
+
+
+
+#module_menu a {   
+    color:#333;
+    font-size: 100%;    
+}
+
+#module_menu a.current {   
+    color:#000;
+    font-size: 100%;    
+}
+
+
+
+.headline {
+    font-size: 150%;
+    font-weight: bold;
+    padding: 10px 0px 10px 0px;
+}
+
+.ul_no_style {
+    list-style: none;
+}
+
+#footer {
+    text-align: center;
+    clear: both;
+}
+
+#thick_hr {
+    color: #7d4c34;
+    background-color: #aaa;
+    height: 0.1px;
+}
+
+#thin_hr {
+    color: #7d4c34;
+    background-color: #aaa;
+    height: 0.1px;
+}
+
+.block {
+    width: 95%;
+    display: block;
+    left:0px;
+    padding: 2px 4px 4px 4px;
+    margin-bottom: 10px;
+    border: 1px solid #CCCCCC;
+    float: left;
+    box-shadow: 1px 1px 1px 1px grey;
+
+}
+
+.block ul {
+    background-color: #fff;
+    color: #7d4c34;
+    list-style: none;
+    padding: 0px 7px 0px;
+}
+
+.collapse {
+display: none;
+}
+
+
+input {
+    -moz-border-radius: 1px 1px 1px 1px;
+    -moz-box-sizing: border-box;
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-color: #777 #aaa #aaa;
+    border-right: 1px solid #777;
+    border-style: solid;
+    border-width: 1px;
+    display: inline-block;
+    height: 29px;
+    margin: 0;
+    padding-left: 8px;
+}
+
+button, select, textarea {
+    -moz-border-radius: 1px 1px 1px 1px;
+    -moz-box-sizing: border-box;
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-color: #777 #aaa #aaa;
+    border-right: 1px solid #777;
+    border-style: solid;
+    border-width: 1px;
+    display: inline-block;
+    margin: 0;
+    padding-left: 8px;
+}
+
+fieldset {
+    display: block;
+        -moz-border-radius: 1px 1px 1px 1px;
+    -moz-box-sizing: border-box;
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-color: #777 #aaa #aaa;
+    border-right: 1px solid #aaa;
+    border-style: solid;
+    border-width: 1px;
+    margin: 0;
+    padding-left: 8px;
+}
+
+label {
+    display: block;
+    float:left;
+}
