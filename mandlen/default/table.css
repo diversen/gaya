@@ -17,17 +17,47 @@ td.order_cart {
     top:0;
 }
 
-.order_align_top {  
-    margin-top: 0px;
-    
-    vertical-align: top;
-    background-color: #fff;
+table.order_cart_item {
+    border-width: thin;
+    border-spacing: 5px;
+    width: 100%;
+
+}
+
+td.order_cart_item {
+    vertical-align:top;
+    top:0;
+}
+
+table.order_cart_category {
+    border-width: thin;
+    border-spacing: 5px;
+    width: 100%;
+
+}
+
+td.order_cart_category {
+    vertical-align:top;
+    top:0;
 }
 
 .order_align_top p {  
     margin-top: 0px;
     vertical-align: top;
     background-color: #fff;
+}
+
+td.order_align_top {
+    vertical-align: top;
+}
+
+
+td.order_headline {
+    height:40px;
+    display: block;
+    font-size: 1.2em;
+    line-height: 1.2em;
+    float:left; 
 }
 
 
