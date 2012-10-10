@@ -345,6 +345,10 @@ legend {
 
 }
 
+.block p {
+    padding-left: 7px;
+}
+
 .block ul {
     background-color: #fff;
     color: #7d4c34;
