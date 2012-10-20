@@ -89,9 +89,9 @@ $blocks = layout2::getBlock('blocks_top');
                 
             </div>
             <div class="column grid_6">
-
+                <header role="banner">
                 <?=template::getLogoHTML(); ?>
-                
+                </header>
             </div>
             <div class="column grid_3">
            &#160;
@@ -104,10 +104,12 @@ $blocks = layout2::getBlock('blocks_top');
                 <? /*=template::getLogoHTML(); */ ?>
             </div>
             <div class="column grid_6">
+                <nav>
                 <div id="main_menu">
                 <?php
                     echo layout::getMainMenu(); ?>
                 </div>
+                </nav>
             </div>
             <div class="column grid_3">
            &#160;
@@ -129,14 +131,14 @@ $blocks = layout2::getBlock('blocks_top');
          </div>
 
          <div class="column grid_6">
+             <nav>
              <div id="module_menu"><?php
                echo layout2::getModuleMenu(); ?>
              </div>
+             </nav>
              <?php
 
             $message = session::getActionMessage();
-            //echo $message;
-            
             if (!empty($message)) { ?>
             
             <div class="system_message">
